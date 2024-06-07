@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>インストーラーダウンロード</title>
+</head>
+<body>
+  <h1>インストーラーダウンロード</h1>
+  <p>以下のボタンをクリックして、インストーラーをダウンロードしてください。</p>
+  <button id="downloadButton">ダウンロード</button>
+
+  <script>
+    const downloadButton = document.getElementById('downloadButton');
+    const installerUrl = '[インストーラーのファイルパス]'; // アップロードしたインストーラーのファイルパスを指定
+
+    downloadButton.addEventListener('click', () => {
+      window.location.href = installerUrl;
+    });
+  </script>
+</body>
+</html>
